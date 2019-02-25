@@ -17,9 +17,10 @@
 								</div>
                             </div>
                             <div class="block-content collapse in">
-												<?php
+						<?php
 						$query = mysqli_query($connection,"select * from students where student_id = '$get_id'")or die(mysqli_error());
 						$row = mysqli_fetch_array($query);
+						
 						$cl = $row['class'];
 						?>
 						<div class="alert alert-success">STUDENT DETAILS</div>
